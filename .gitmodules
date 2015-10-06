@@ -1,3 +1,6 @@
 [submodule "bundle/phpvim"]
 	path = bundle/phpvim
 	url = https://github.com/StanAngeloff/php.vim
+[submodule "bundle/airline"]
+	path = bundle/airline
+	url = https://github.com/bling/vim-airline
