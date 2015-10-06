@@ -75,6 +75,9 @@ imap <leader>" ""<ESC>i
 imap <leader>( ()<ESC>i
 imap <leader>[ []<ESC>i
 
+"==== Emmet ====
+let g:user_emmet_leader_key='<C-A>'
+
 "=== CTags ====
 let Tlist_Ctags_Cmd = "/usr/bin/ctags"
 let Tlist_WinWidth = 50
