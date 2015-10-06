@@ -1,8 +1,8 @@
 "===== Pathogen Call =======
 execute pathogen#infect()
+syntax on
 filetype plugin indent on
 
-syntax enable 
 
 set smartindent
 set tabstop=4
