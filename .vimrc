@@ -10,6 +10,7 @@ set shiftwidth=4
 set expandtab
 set number
 set nowrap
+set relativenumber
 
 set showcmd
 set wildmenu
