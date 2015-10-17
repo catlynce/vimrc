@@ -28,3 +28,15 @@
 [submodule "bundle/l9"]
 	path = bundle/l9
 	url = https://github.com/vim-scripts/L9
+[submodule "bundle/vim-nerd-treetabs"]
+	path = bundle/vim-nerd-treetabs
+	url = https://github.com/jistr/vim-nerdtree-tabs
+[submodule "bundle/vimshell"]
+	path = bundle/vimshell
+	url = https://github.com/Shougo/vimshell.vim
+[submodule "bundle/vimproc"]
+	path = bundle/vimproc
+	url = https://github.com/Shougo/vimproc.vim.git
+[submodule "bundle/svndiff"]
+	path = bundle/svndiff
+	url = https://github.com/vim-scripts/svndiff
