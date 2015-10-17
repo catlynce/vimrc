@@ -37,6 +37,3 @@
 [submodule "bundle/vimproc"]
 	path = bundle/vimproc
 	url = https://github.com/Shougo/vimproc.vim.git
-[submodule "bundle/svndiff"]
-	path = bundle/svndiff
-	url = https://github.com/vim-scripts/svndiff
