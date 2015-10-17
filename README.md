@@ -1,6 +1,6 @@
 Install
 
-git clone https://github.com/catlynx/vimrc ~/.vim
+git clone https://github.com/catlynce/vimrc ~/.vim
 
 ln -s ~/.vim/.vimrc ~/.vimrc
 
