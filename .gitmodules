@@ -19,9 +19,6 @@
 [submodule "bundle/csscolor"]
 	path = bundle/csscolor
 	url = https://github.com/ap/vim-css-color
-[submodule "bundle/fuzzyfinder"]
-	path = bundle/fuzzyfinder
-	url = https://github.com/vim-scripts/FuzzyFinder
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree

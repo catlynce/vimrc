@@ -32,7 +32,7 @@ set nobackup
 set noswapfile
 
 "====== SET THE POWERLINE INSTALLATION DIRECTORY =====
-set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim
+"set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim
 
 set laststatus=2
 set t_Co=256
@@ -76,6 +76,11 @@ imap <leader>" ""<ESC>i
 imap <leader>( ()<ESC>i
 imap <leader>[ []<ESC>i
 
+"==== UltiSnips ====
+let g:UltinSnipsExpandTrigger="<c-a>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+
 "==== Emmet ====
 let g:user_emmet_leader_key='<C-A>'
 
@@ -84,7 +89,3 @@ let Tlist_Ctags_Cmd = "/usr/bin/ctags"
 let Tlist_WinWidth = 50
 map <F4> :TlistToggle<cr>
 
-"==== UltiSnips ====
-let g:UltinSnipsExpandTrigger="<c-a>"
-let g:UltiSnipsJumpForwardTrigger="<c-j>"
-let g:UltiSnipsJumpBackwardTrigger="<c-k>"
