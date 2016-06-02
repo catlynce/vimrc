@@ -41,6 +41,7 @@ set t_Co=256
 set background=dark
 colorscheme jellybeans
 "colorscheme xoria256
+hi CursorLine cterm=NONE ctermbg=238 ctermfg=white
 
 "let g:solarized_termcolors=256
 "colorscheme solarized
@@ -61,9 +62,14 @@ nnoremap tl :tablast<CR>
 let mapleader=","
 map <C-n> :NERDTreeToggle<CR>
 nnoremap <F5> :GundoToggle<CR>
+
+nmap <leader><leader>q :q<cr>
+nmap <leader>qa :qa<cr>
+
 "===== comments ============
 nmap <leader>c <C-_><C-_>
 map <leader>b <C-_>b
+
 "===== window navigation ===
 nmap <down> <Nop>
 nmap <up> <Nop>
@@ -76,10 +82,17 @@ imap <leader>" ""<ESC>i
 imap <leader>( ()<ESC>i
 imap <leader>[ []<ESC>i
 
+"==== YouCompleteMe ====
+let g:ycm_key_list_select_completion=['<c-j>']
+let g:ycm_key_list_previous_completion=['<c-k>']
+
+
 "==== UltiSnips ====
-let g:UltinSnipsExpandTrigger="<c-a>"
-let g:UltiSnipsJumpForwardTrigger="<c-j>"
-let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+" let g:UltinSnipsExpandTrigger="<c-l>"
+"let g:UltinSnipsExpandTrigger="<c-tab>"
+let g:UltinSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 "==== Emmet ====
 let g:user_emmet_leader_key='<C-A>'
@@ -89,3 +102,26 @@ let Tlist_Ctags_Cmd = "/usr/bin/ctags"
 let Tlist_WinWidth = 50
 map <F4> :TlistToggle<cr>
 
+"==== ctrlp ====
+let g:ctrlp_match_window = 'bottom,order:ttb,min:1,max:8'
+let g:ctrlp_show_hidden = 1
+let g:ctrlp_open_new_file = 't'
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<c-t>'],
+    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+    \ }
+
+
+"==== indentLine ====
+let g:indentLine_char = '|'
+let g:indentLine_color_term = 239
+
+
+"==== Laravel Specific ====
+nmap <leader>lr <C-t>:e app/Http/routes.php<cr>
+nmap <leader>lc <C-t>:e app/Http/Controllers/<cr>
+nmap <leader>lm <C-t>:e app/<cr>
+nmap <leader>lv <C-t>:e resources/views/<cr>
+nmap <leader><leader>lc :! php artisan make:controller
+nmap <leader><leader>lm :! php artisan make:model
+nmap <leader><leader>lv :! php artisan make:view
