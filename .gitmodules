@@ -52,3 +52,6 @@
 [submodule "bundle/vim-php-namespace"]
 	path = bundle/vim-php-namespace
 	url = https://github.com/arnaud-lb/vim-php-namespace
+[submodule "bundle/vim-blade"]
+	path = bundle/vim-blade
+	url = https://github.com/jwalton512/vim-blade
