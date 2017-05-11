@@ -65,6 +65,7 @@ nnoremap <F5> :GundoToggle<CR>
 
 nmap <leader><leader>q :q<cr>
 nmap <leader>qa :qa<cr>
+nmap <leader>w :w<cr>
 
 "===== comments ============
 nmap <leader>c <C-_><C-_>
@@ -118,9 +119,9 @@ let g:indentLine_color_term = 239
 
 
 "==== Laravel Specific ====
-nmap <leader>lr <C-t>:e app/Http/routes.php<cr>
+nmap <leader>lr <C-t>:e routes/web.php<cr>
 nmap <leader>lc <C-t>:e app/Http/Controllers/<cr>
-nmap <leader>lm <C-t>:e app/<cr>
+nmap <leader>lm <C-t>:e app/Models<cr>
 nmap <leader>lv <C-t>:e resources/views/<cr>
 nmap <leader><leader>lc :! php artisan make:controller
 nmap <leader><leader>lm :! php artisan make:model
