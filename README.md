@@ -1,4 +1,4 @@
-##Install
+## Install
 
 Open your terminal and run
 
