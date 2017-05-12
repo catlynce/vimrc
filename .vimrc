@@ -126,3 +126,6 @@ nmap <leader>lv <C-t>:e resources/views/<cr>
 nmap <leader><leader>lc :! php artisan make:controller
 nmap <leader><leader>lm :! php artisan make:model
 nmap <leader><leader>lv :! php artisan make:view
+
+"==== Javascript Libraries Syntax ====
+let g:used_javascript_libs = 'jquery,vue'
