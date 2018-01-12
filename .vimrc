@@ -86,6 +86,7 @@ imap <leader>[ []<ESC>i
 "==== YouCompleteMe ====
 let g:ycm_key_list_select_completion=['<c-j>']
 let g:ycm_key_list_previous_completion=['<c-k>']
+let g:ycm_server_python_interpreter='/usr/bin/python2.7'
 
 
 "==== UltiSnips ====
@@ -129,3 +130,12 @@ nmap <leader><leader>lv :! php artisan make:view
 
 "==== Javascript Libraries Syntax ====
 let g:used_javascript_libs = 'jquery,vue'
+
+"==== php namespace ====
+function! IPhpInsertUse()
+    call PhpInsertUse()
+    call feedkeys('a', 'n')
+endfunction
+autocmd FileType php inoremap <leader>u <Esc>:call IPhpInsertUse()<CR>
+autocmd FileType php noremap <leader>u :call PhpInsertUse()<CR>
+
