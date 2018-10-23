@@ -71,3 +71,6 @@
 [submodule "bundle/vim-wakatime"]
 	path = bundle/vim-wakatime
 	url = https://github.com/wakatime/vim-wakatime.git
+[submodule "vim-todo-lists"]
+	path = vim-todo-lists
+	url = https://github.com/aserebryakov/vim-todo-lists
