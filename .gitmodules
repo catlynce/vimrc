@@ -42,10 +42,6 @@
 	path = bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips
     ignore = dirty
-[submodule "bundle/youcompleteme"]
-	path = bundle/youcompleteme
-	url = https://github.com/Valloric/YouCompleteMe
-    ignore = dirty
 [submodule "bundle/vim-snippets"]
 	path = bundle/vim-snippets
 	url = https://github.com/honza/vim-snippets
